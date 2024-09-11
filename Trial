@@ -1,1 +1,9 @@
 This is the trial messgae i want to see on Git!
+
+
+#include<stdio.h>
+int main (){
+int a,b;
+c=a+b;
+printf("%d",c);
+}
