@@ -166,3 +166,57 @@ int main(){
     
     return 0;
 }
+
+Perfect Number:
+
+#include<stdio.h>
+int main(){
+    int a;
+    int sum;
+    
+    printf("Type 3 numbers: \n");
+    scanf("%d",&a);
+    
+    // printf("Checking if %d Perfect Number", a);
+    for (int i=1;i<a;i++){
+        if(a%i==0){
+            sum=sum+i;
+        }
+    }
+    if(a == sum){
+        printf("%d is a perfect number",a);
+    }else{
+        printf("%d is not a perfect",a);
+    }
+    return 0;
+}
+
+prime number
+ude<stdio.h>
+int main(){
+    int i;
+    int a;
+    int count;
+    printf("Checking if a number is Prime or not...");
+    printf("\nEnter a number ");
+    scanf("%d",&a);
+    i=a;
+
+    // prime number 
+    printf("%d is divisible by ",a);
+    while(i>0){
+    
+        if (a%i==0){
+            count=count+1;
+            printf("\n %d",i);
+        }
+        i--;
+        
+    }
+    if (count>2){
+        printf("\n %d is a prime number",a);
+    }else{
+        printf("\n %d is not a prime number",a);
+    }
+    return 0;
+}
