@@ -120,3 +120,49 @@ int main(){
     }
     return 0;
 }
+
+
+Greatest of 3 numbers :
+
+1 . Nested if
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("Type 3 numbers: \n");
+    scanf("%d %d %d",&a,&b,&c);
+    
+    if (a>b){
+        if(a>c){
+            printf("a is greatest");
+        }
+        else {
+            printf("c is greatest");
+        }
+    }
+    else{
+        if(b>c){
+            printf("b is greatest");
+        }else{
+            printf("c is greatest");
+        }
+    }
+    
+    return 0;
+}
+
+
+
+2. Ternary operator 
+
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("Type 3 numbers: \n");
+    scanf("%d %d %d",&a,&b,&c);
+    
+    int a1=(a>b)?a:b;
+    int a2=(a1>c)?a1:c;
+    printf("%d is greatest",a2);
+    
+    return 0;
+}
