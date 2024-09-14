@@ -220,3 +220,80 @@ int main(){
     }
     return 0;
 }
+
+
+
+
+getchar -> converting int data type to string even numbers 
+
+#include<stdio.h>
+int main(){
+    int a , b , c;
+    
+    a=getchar();// int to char
+    putchar(a);// printing char
+    printf(" \nEntered char is %c and ascii code is %d",a,a); 
+    
+    // printf(""typeof(a));
+    
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a , b , c;
+    printf("Type a ");
+    a=getchar();// int to char
+    putchar(a);// printing char
+    printf(".     %d.  %c",a,a); 
+    
+    // printf(""typeof(a));
+    
+    return 0;
+}
+
+
+
+
+gets and puts 
+
+#include<stdio.h>
+int main(){
+  
+    char a[100];
+    printf("Type a string ");
+    
+    gets(a);
+    puts(a);
+    
+    return 0;
+}
+
+
+Macros #define variable value 
+#define funct(value(s)) Define function Ternary Operator 
+
+#include<stdio.h>
+
+#define a 10
+#define min(a,b) (a<b) ? a : b
+int main(){
+    // int a , b , c;
+    // putchar(a);
+    printf("Value of a was defined 10 and now is %d",a);
+    
+    printf("\n Minimum value 5 or 10 is %d",min(10,5));
+    // a=getchar();// int to char
+    putchar(a);// printing char
+    printf(" \nEntered char is %c and ascii code is %d",a,a); 
+    
+    // printf(""typeof(a));
+    
+    return 0;
+}
+
+Output : Value of a was defined 10 and now is 10
+ Minimum value 5 or 10 is 5
+ 
+Entered char is 
+ and ascii code is 10
