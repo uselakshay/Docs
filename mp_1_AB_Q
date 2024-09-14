@@ -297,3 +297,51 @@ Output : Value of a was defined 10 and now is 10
  
 Entered char is 
  and ascii code is 10
+
+
+
+go to 
+
+
+#include<stdio.h>
+int main (){
+    int a , i ;
+    i=0;
+    printf("Printing numbers");
+    num:
+    if (i>0){
+        printf("\n %d",i);
+    }
+    i++;
+    if (i<10){
+        goto num;
+    }
+    
+    
+}
+
+Factors of a number goto
+
+#include<stdio.h>
+int main (){
+    int a , i ;
+    int factors ;
+    
+    printf("Enter a number ");
+    scanf("%d",&a);
+    i=1;
+    // Finding factors 
+    
+    // making loop
+    printf("Factors of %d are ",a);
+    factors:
+    if(a%i==0){
+        printf("\n %d",i);
+    }
+    i++;
+    if (a>i){
+       goto factors; 
+    }
+    
+    
+}
