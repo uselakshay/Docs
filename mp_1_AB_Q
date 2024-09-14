@@ -345,3 +345,34 @@ int main (){
     
     
 }
+
+switch case 
+
+
+#include<stdio.h>
+#define ticket_number 5
+int main (){
+    int user_choice ;
+    printf("Type a number");
+    scanf("%d",&user_choice);
+    switch(user_choice){
+        
+        case 2:
+        printf("Won the Ticket \nTicket Code : AB564Q");
+        break;
+        
+        case 3:
+        printf("Won the Ticket \nTicket Code : AB564Q");
+        break;
+        
+        case 4:
+        printf("Won the Ticket \nTicket Code : AB564Q");
+        break;
+        
+        case 7:
+        printf("Won the Ticket \nTicket Code : AB564Q");
+        break;
+        
+        default:
+        printf("Better luck next time!");
+    }
